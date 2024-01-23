@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cyient.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    #banner {
+      image-rendering: fullscreen;
+      height: 600px;
+      width: 100%;
+      object-fit:cover;
+      margin-bottom: 16px;
+    }
+    #image{
+      margin-top: 20px;
+      font-family:Lucida Handwriting,Cursive;
+    }
+    #aryan{
+      margin-top: 50px;
+      font-family:Lucida Handwriting,Cursive;
+      margin-bottom: 10px
+    }
+    #2nd_para{
+      margin-top: 20px;
+      font-family: italic,cursive;
+    }
+
+  </style>
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <h1 class = 'text-center mt-2 mb-4'>
+      Welcome to CYIENT.com
+    </h1>
+    <img class = 'img-fluid' id='banner' src = 'static/1st.jpg'>
+
+
+
+    <div id ="container">  
+    <h3 class="text-center mt-2 mt-4" id ="aryan">Know more about     Cyient</h3>
+        <div class="row" style="margin-bottom:32px">
+          <div class="text-center">
+        <p class="lead mt-2 mb-4" >
+          Step into the realm of technical ingenuity with Cyient, a company that thrives at the intersection of innovation and precision engineering. Renowned for our pioneering solutions in advanced technology, Cyient is a beacon of technological prowess, redefining the landscape of engineering and digital transformation. Our commitment to pushing technical boundaries is reflected in our cutting-edge engineering designs and transformative digital strategies. With an elite team of experts, we navigate the complex challenges of the tech landscape, crafting solutions that go beyond conventional limits. Cyient is not merely a company; it's a technical powerhouse, a crucible of ideas where breakthroughs are not just encouraged but expected. Join us on this technical odyssey, where we leverage expertise to shape industries and engineer a future where technology knows no bounds. Welcome to Cyient, where technical excellence meets limitless possibilities.
+        </p>
+      </div>  
+
+          <div class="container text-center" id='image'>
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="static/2nd.jpg" class="img-fluid rounded">
+                Working hard
+              </div>
+              <div class="col">
+                <img src="static/3rd.jpg" class="img-fluid rounded">
+                together makes
+              </div>
+              <div class="col">
+                <img src="static/4rd.jpg" class="img-fluid rounded">
+                tasks easier
+              </div>
+            </div>
+          </div>
+      <div>
+        <h2 class = 'text-center lead fst-italic 'id='aryan'>Work with us and enhance your career
+        </h3>
+        <p class="lead text-center" >
+          Embark on a career journey that transcends boundaries and catapults you into the forefront of technological innovation at Cyient. Join a dynamic team where your ideas are not just valued but form the very fabric of groundbreaking solutions. At Cyient, we don't just anticipate the future; we engineer it. As a part of our team, you will be immersed in an environment that fosters creativity, challenges the status quo, and encourages continuous learning. We are not just shaping industries; we are shaping the future, and we invite you to be a part of this transformative adventure. Cyient is not just a company; it's a community of visionary minds working collaboratively to push the boundaries of what's possible. If you seek a career that transcends the ordinary, where your skills are honed, and your potential unleashed, then Cyient is the place for you. Join us, and together, let's engineer a future that defies expectations and unlocks unparalleled possibilities. Your journey to extraordinary begins here.
+        </p>
+      </div>
+
+      <a href = "/job" class="btn btn-primary btn-md mt-3" style='font-family: Lucida Handwriting,Cursive;' >Job Openings</a>
+          
+      <div class="text-center" id="button">   
+     {% include 'footer.html' %}
+        </div>
+          </div> 
+ </body>
+</html>

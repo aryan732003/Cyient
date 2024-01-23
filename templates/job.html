@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      Jobopenings 
+    </title>
+    {% include 'bootstrap.html' %}
+    <div style="height: 55px"></div>
+    <style>
+    h1{
+      font-family:arial,sans-serif;
+    } 
+    #bar{
+      color: rgb(255,255,255);
+    }
+
+    </style>
+  </head>
+  <body>
+      <nav class="navbar fixed-top" style="background-color: 	#5A5A5A;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" id='bar'>
+          <img src="static/logo.jpg" alt="Logo" width="30" height="26" class="d-inline-block align-text-top">
+          Cyient
+        </a>
+      </div>
+    </nav>
+    <h1 class = 'text-center mt-4' style='font-family: Lucida Handwriting,cursive;' >
+      Job Openings 
+    </h1>
+    
+    <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+    </div>
+     {% include 'footer.html' %}
+  </body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background:  #FFFFFF;
+            color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #36454F ;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+ 
+        h1 {
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        b {
+            color: #FFFFFF;
+              font-family: Georgia,serif;
+        }
+
+        .mb-2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">
+            CONGRATULATIONS!🎉
+        </h1>
+
+        <p class='text-center'>Your application for the role of <b>{{job['position']}}</b> at <b>Cyient</b> has been submitted!</p>
+        <div class='container text-start '>
+        <b>Full Name :</b>
+        <div class="mb-2">{{application['full_name']}}</div>
+
+        <b>Email :</b>
+        <div class="mb-2">{{application['email']}}</div>
+
+        <b>LinkedIn URL :</b>
+        <div class="mb-2">{{application['linkedin_url']}}</div>
+
+        <b>Education :</b>
+        <div class="mb-2">{{application['education']}}</div>
+
+        <b>Work Experience :</b>
+        <div class="mb-2">{{application['work_experience']}}</div>
+
+        <b>Resume URL :</b>
+        <div class="mb-2">{{application['resume_url']}}</div>
+        </div>
+    </div>
+  
+
+</body>
+</html>
