@@ -1,10 +1,11 @@
 import os
+import sqlalchemy as sa
 
 from sqlalchemy import create_engine, text
 
 my_secret = os.environ['DB_CONNECTION_STRING']
 
-engine = create_engine(my_secret)
+engine = sa.create_engine(my_secret)
 
 
 def load_jobs_from_db():
