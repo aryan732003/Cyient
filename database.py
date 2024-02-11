@@ -2,6 +2,8 @@ import os
 import sqlalchemy as sa
 import psycopg2
 
+from sqlalchemy.ext.declarative import declarative_base
+
 from sqlalchemy import create_engine, text
 
 DB_CONNECTION_STRING = "postgresql://aryan732003:BWArQI0Oi4TE@ep-sparkling-glade-a50wr0c5.us-east-2.aws.neon.tech/neondb"
