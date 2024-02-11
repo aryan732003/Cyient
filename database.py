@@ -4,10 +4,7 @@ from sqlalchemy import create_engine, text
 
 my_secret = os.environ['DB_CONNECTION_STRING']
 
-engine = create_engine(my_secret,
-                       connect_args={"ssl": {
-                           "ssl_ca": "/etc/ssl/cert.pem"
-                       }})
+engine = create_engine(my_secret)
 
 
 def load_jobs_from_db():
