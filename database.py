@@ -3,9 +3,9 @@ import sqlalchemy as sa
 
 from sqlalchemy import create_engine, text
 
-my_secret = os.environ['DB_CONNECTION_STRING']
-
-engine = sa.create_engine(my_secret)
+DB_CONNECTION_STRING = "postgresql+psycopg2://aryan732003:BWArQI0Oi4TE@ep-sparkling-glade-a50wr0c5.us-east-2.aws.neon.tech/neondb?sslmode=require"
+os.environ['DB_CONNECTION_STRING'] = DB_CONNECTION_STRING
+engine = sa.create_engine(os.environ['DB_CONNECTION_STRING'])
 
 
 def load_jobs_from_db():
