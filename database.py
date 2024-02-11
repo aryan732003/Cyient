@@ -1,5 +1,6 @@
 import os
 import sqlalchemy as sa
+import psycopg2
 
 from sqlalchemy import create_engine, text
 
