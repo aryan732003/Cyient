@@ -6,7 +6,7 @@ from sqlalchemy import create_engine, text
 DB_CONNECTION_STRING = "postgresql://aryan732003:BWArQI0Oi4TE@ep-sparkling-glade-a50wr0c5.us-east-2.aws.neon.tech/neondb"
 os.environ['DB_CONNECTION_STRING'] = DB_CONNECTION_STRING
 
-# Modify the connection string to use psycopg2 and include SSL-related parameters
+# Modify the connection string to use psycopg2-binary and include SSL-related parameters
 engine = create_engine(os.environ['DB_CONNECTION_STRING'],
                        connect_args={"sslmode": "require"})
 
