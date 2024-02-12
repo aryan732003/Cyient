@@ -2,3 +2,5 @@ Flask
 gunicorn
 sqlalchemy
 pymysql
+postgresql
+psycopg2
